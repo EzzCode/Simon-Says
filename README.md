@@ -1,11 +1,11 @@
 # Simon Says Game
 
-This Arduino code implements a Simon Says game using an LCD display, buttons, and a joystick. The game generates a random sequence of button presses and challenges the player to replicate it using a joystick. The LCD displays the player's score and the high score.
+This Arduino code implements a Simon Says game using an LCD display, 4 LEDs, and a joystick. The game generates a random sequence of LEDs and challenges the player to replicate it using a joystick. The LCD displays the player's score and the high score.
 
 ## Components Used
 - LiquidCrystal library for LCD display
 - Joystick for user input
-- LEDs/buttons for gameplay
+- LEDs for gameplay
 - Arduino board with analog and digital pins
 
 ## Setup
@@ -16,8 +16,8 @@ This Arduino code implements a Simon Says game using an LCD display, buttons, an
 
 ## Game Logic
 - The game starts with a brief LED display indicating the current high score and the player's score.
-- The player must replicate the randomly generated sequence of button presses displayed on the LCD.
-- Joystick movements and button presses are used to input the player's moves.
+- The player must replicate the randomly generated sequence of LEDs arranged in top, bottom, left, and right of the joystick.
+- Joystick movements are used to input the player's moves.
 - If the player fails to replicate the sequence correctly, LEDs blink to indicate a loss.
 
 ## Functions
